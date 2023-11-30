@@ -1,6 +1,6 @@
 FROM mzz2017/git:alpine AS version
 WORKDIR /build
-ADD .git ./.git
+ADD .github ./.github
 RUN git describe --abbrev=0 --tags | tee ./version
 
 
